@@ -2,6 +2,8 @@
 
 A dark Vim/Neovim color scheme for the GUI and 16/256/true-color terminals, based on [FlatColor](https://github.com/MaxSt/FlatColor), with colors inspired by the excellent [One Dark syntax theme](https://github.com/atom/atom/tree/master/packages/one-dark-syntax) for the [Atom text editor](https://atom.io).
 
+**This is a fork I have changed the colors of this theme to suit me personal (unnamed color scheme) I won't but updating the color reference or anything of the sort unless this theme gets absurdly popular**
+
 ## Color Reference
 
 ![Color Reference](https://raw.githubusercontent.com/joshdick/onedark.vim/master/img/color_reference.png)
@@ -59,11 +61,11 @@ A dark Vim/Neovim color scheme for the GUI and 16/256/true-color terminals, base
 
 **Note:** All options should be set **before** the `colorscheme onedark` line in your `~/.vimrc`.
 
-* `g:onedark_hide_endofbuffer`: Set to `1` if you want to hide end-of-buffer filler lines (~) for a cleaner look; `0` otherwise (the default).
+- `g:onedark_hide_endofbuffer`: Set to `1` if you want to hide end-of-buffer filler lines (~) for a cleaner look; `0` otherwise (the default).
 
-* `g:onedark_termcolors` **(see [Troubleshooting](#troubleshooting) (below) for more information about this option)**: Set to `256` for 256-color terminals (the default), or set to `16` to use your terminal emulator's native 16 colors.
+- `g:onedark_termcolors` **(see [Troubleshooting](#troubleshooting) (below) for more information about this option)**: Set to `256` for 256-color terminals (the default), or set to `16` to use your terminal emulator's native 16 colors.
 
-* `g:onedark_terminal_italics`: Set to `1` if your terminal emulator supports italics; `0` otherwise (the default).
+- `g:onedark_terminal_italics`: Set to `1` if your terminal emulator supports italics; `0` otherwise (the default).
 
 ## lightline.vim Colorscheme
 
@@ -73,8 +75,8 @@ This repository includes a companion [lightline.vim](https://github.com/itchyny/
 
 The lightline.vim colorscheme:
 
-* Depends on `autoload/onedark.vim` for its colors, and must therefore be used in conjunction with it.
-* Works with both color modes available in onedark.vim (16 or 256 colors), as specified in the configuration for onedark.vim.
+- Depends on `autoload/onedark.vim` for its colors, and must therefore be used in conjunction with it.
+- Works with both color modes available in onedark.vim (16 or 256 colors), as specified in the configuration for onedark.vim.
 
 ### Installation
 
@@ -96,9 +98,9 @@ This repository includes a companion [vim-airline](https://github.com/vim-airlin
 
 The vim-airline theme:
 
-* Depends on `autoload/onedark.vim` for its colors, and must therefore be used in conjunction with it.
-* Works with both color modes available in onedark.vim (16 or 256 colors), as specified in the configuration for onedark.vim.
-* Is based on vim-airline's ["tomorrow" theme](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/tomorrow.vim).
+- Depends on `autoload/onedark.vim` for its colors, and must therefore be used in conjunction with it.
+- Works with both color modes available in onedark.vim (16 or 256 colors), as specified in the configuration for onedark.vim.
+- Is based on vim-airline's ["tomorrow" theme](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/tomorrow.vim).
 
 ### Installation
 
@@ -128,23 +130,23 @@ However, you can use the `g:onedark_termcolors` option to control onedark.vim's 
 
 **When Vim/Neovim are configured to use 24-bit color, the `g:onedark_termcolors` option is ignored. However, `g:onedark_termcolors` can still coexist with 24-bit color configuration.** For instance, when tmux 2.1 or earlier and/or older Vim/Neovim versions that don't support 24-bit color are used, the `g:onedark_termcolors` option will take effect.
 
-* **256-color mode** is enabled by default with no additional configuration, but colors are less accurate since they are approximated using a 256-color palette. The background color will appear darker than in the preview image, and most other colors will appear brighter than in the preview image. If you don't want to change your terminal's color palette as described in the 16-color mode section below, and your terminal doesn't support 24-bit color, 256-color mode is your only option.
+- **256-color mode** is enabled by default with no additional configuration, but colors are less accurate since they are approximated using a 256-color palette. The background color will appear darker than in the preview image, and most other colors will appear brighter than in the preview image. If you don't want to change your terminal's color palette as described in the 16-color mode section below, and your terminal doesn't support 24-bit color, 256-color mode is your only option.
 
-   Although 256-color mode is enabled by default (when not using 24-bit color as described above), you can explicitly enable it by adding the following line to your `~/.vimrc`:
+  Although 256-color mode is enabled by default (when not using 24-bit color as described above), you can explicitly enable it by adding the following line to your `~/.vimrc`:
 
-   ```vim
-   let g:onedark_termcolors=256
-   ```
+  ```vim
+  let g:onedark_termcolors=256
+  ```
 
-* **16-color mode** is the preferred option, since its colors are more accurate than those of 256-color mode. However, you'll need to set your terminal emulator's color palette to this color scheme's custom 16-color palette, since 16-color mode will cause the color scheme to use your terminal emulator's native 16 colors. If you don't use the custom 16-color palette in your terminal emulator when 16-color mode is enabled, onedark.vim's colors will not display correctly in Vim.
+- **16-color mode** is the preferred option, since its colors are more accurate than those of 256-color mode. However, you'll need to set your terminal emulator's color palette to this color scheme's custom 16-color palette, since 16-color mode will cause the color scheme to use your terminal emulator's native 16 colors. If you don't use the custom 16-color palette in your terminal emulator when 16-color mode is enabled, onedark.vim's colors will not display correctly in Vim.
 
-   The canonical version of the 16-color palette is an [Xresources](https://en.wikipedia.org/wiki/X_resources) file located in this repository at `term/One Dark.Xresources`. Color schemes for various terminal emulators are also provided in `term/`. (The [iTerm2](https://iterm2.com/) color scheme works with iTerm2 versions 2.9.x and later.) You should be able to easily convert the Xresources color scheme for use with your terminal emulator of choice either by hand, or automatically by using [termcolors](https://github.com/stayradiated/termcolors).
+  The canonical version of the 16-color palette is an [Xresources](https://en.wikipedia.org/wiki/X_resources) file located in this repository at `term/One Dark.Xresources`. Color schemes for various terminal emulators are also provided in `term/`. (The [iTerm2](https://iterm2.com/) color scheme works with iTerm2 versions 2.9.x and later.) You should be able to easily convert the Xresources color scheme for use with your terminal emulator of choice either by hand, or automatically by using [termcolors](https://github.com/stayradiated/termcolors).
 
-   Assuming your terminal emulator is configured to use the custom 16-color palette as described above, add the following line to your `~/.vimrc` to enable 16-color mode:
+  Assuming your terminal emulator is configured to use the custom 16-color palette as described above, add the following line to your `~/.vimrc` to enable 16-color mode:
 
-   ```vim
-   let g:onedark_termcolors=16
-   ```
+  ```vim
+  let g:onedark_termcolors=16
+  ```
 
 ### Why do all comments look like they're highlighted?
 
@@ -236,16 +238,16 @@ Several other themes and projects have reused code and/or colors from this proje
 
 If onedark.vim isn't meeting your needs, try one of its relatives!
 
-* [drewtempelmeyer/palenight.vim](https://github.com/drewtempelmeyer/palenight.vim)
-* [KeitaNakamura/neodark.vim](https://github.com/KeitaNakamura/neodark.vim)
-* [base16-onedark.vim](https://github.com/chriskempson/base16-vim/blob/master/colors/base16-onedark.vim)
-  * Associated base16 scheme: [tilal6991/base16-onedark-scheme](https://github.com/tilal6991/base16-onedark-scheme)
-* [rakr/vim-one](https://github.com/rakr/vim-one)
+- [drewtempelmeyer/palenight.vim](https://github.com/drewtempelmeyer/palenight.vim)
+- [KeitaNakamura/neodark.vim](https://github.com/KeitaNakamura/neodark.vim)
+- [base16-onedark.vim](https://github.com/chriskempson/base16-vim/blob/master/colors/base16-onedark.vim)
+  - Associated base16 scheme: [tilal6991/base16-onedark-scheme](https://github.com/tilal6991/base16-onedark-scheme)
+- [rakr/vim-one](https://github.com/rakr/vim-one)
 
 ### Preview images
 
 Preview images were taken using:
 
-* [iTerm2](https://iterm2.com) terminal emulator on macOS
-* 13 pt. [PragmataPro Mono](http://www.fsd.it/fonts/pragmatapro.htm#.VlDa1q6rTOY) font
-* [vim-polyglot](https://github.com/sheerun/vim-polyglot) plug-in
+- [iTerm2](https://iterm2.com) terminal emulator on macOS
+- 13 pt. [PragmataPro Mono](http://www.fsd.it/fonts/pragmatapro.htm#.VlDa1q6rTOY) font
+- [vim-polyglot](https://github.com/sheerun/vim-polyglot) plug-in

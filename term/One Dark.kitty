@@ -1,20 +1,20 @@
 # Cursor
-cursor                   #abb2bf
-cursor_text_color        #5c6370
+cursor                   #cccccc
+cursor_text_color        #3f3f49
 
 # Special
-foreground               #abb2bf
-background               #282c34
-selection_foreground     #5c6370
-selection_background     #abb2bf
+foreground               #cccccc
+background               #111111
+selection_foreground     #3f3f49
+selection_background     #cccccc
 
 # Black
-color0                   #5c6370
-color8                   #4b5263
+color0                   #3f3f49
+color8                   #45454f
 
 # Red
-color1                   #e06c75
-color9                   #be5046
+color1                   #ff5555
+color9                   #f44747
 
 # Green
 color2                   #98c379
@@ -37,5 +37,5 @@ color6                   #56b6c2
 color14                  #56b6c2
 
 # White
-color7                   #abb2bf
-color15                  #3e4452
+color7                   #cccccc
+color15                  #242424
