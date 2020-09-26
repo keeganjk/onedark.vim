@@ -33,7 +33,7 @@ function! airline#themes#onedark#refresh()
         \ 'red': [ s:colors.red.gui, '', s:term_red, 0 ]
         \ }
 
-  let s:N1 = [ s:colors.black.gui, s:colors.green.gui, s:term_black, s:term_green ]
+  let s:N1 = [ s:colors.black.gui, s:colors.blue.gui, s:term_black, s:term_blue ]
   let s:N2 = [ s:colors.white.gui, s:colors.visual_grey.gui, s:term_white, s:term_grey ]
   let s:N3 = [ s:colors.green.gui, s:colors.black.gui, s:term_green, '' ]
   let g:airline#themes#onedark#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
@@ -72,7 +72,7 @@ function! airline#themes#onedark#refresh()
   " Warning/Error styling code from vim-airline's ["base16" theme](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/base16.vim)
 
   " Warnings
-  let s:WI = [ s:colors.black.gui, s:colors.yellow.gui, s:term_black, s:term_yellow ]
+  let s:WI = [ s:colors.black.gui, s:colors.visual_black.gui, s:term_black, s:term_grey ]
   let g:airline#themes#onedark#palette.normal.airline_warning = [
        \ s:WI[0], s:WI[1], s:WI[2], s:WI[3]
        \ ]
