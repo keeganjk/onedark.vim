@@ -8,12 +8,12 @@ const { resolve } = require('path')
 const baseColors = Object.freeze({
 	red: { gui: '#FF5555', cterm: '9', cterm16: '9' }, // alternate cterm: 168
 	dark_red: { gui: '#f44747', cterm: '1', cterm16: '1' },
-	green: { gui: '#98C379', cterm: '2', cterm16: '2' },
-	yellow: { gui: '#E5C07B', cterm: '3', cterm16: '3' },
-	dark_yellow: { gui: '#D19A66', cterm: '11', cterm16: '11' },
-	blue: { gui: '#61AFEF', cterm: '4', cterm16: '4' }, // alternate cterm: 75
-	purple: { gui: '#C678DD', cterm: '5',  cterm16: '5' }, // alternate cterm: 176
-	cyan: { gui: '#56B6C2', cterm: '6', cterm16: '6' }, // alternate cterm: 73
+	green: { gui: '#98C379', cterm: '10', cterm16: '10' },
+	yellow: { gui: '#E5C07B', cterm: '11', cterm16: '11' },
+	dark_yellow: { gui: '#D19A66', cterm: '3', cterm16: '3' },
+	blue: { gui: '#61AFEF', cterm: '12', cterm16: '12' }, // alternate cterm: 75
+	purple: { gui: '#C678DD', cterm: '13',  cterm16: '13' }, // alternate cterm: 176
+	cyan: { gui: '#56B6C2', cterm: '14', cterm16: '14' }, // alternate cterm: 73
 	white: { gui: '#ffffff', cterm: '15', cterm16 : '15' },
 	black: { gui: '#000000', cterm: '0', cterm16: '0' }
 })
